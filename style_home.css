@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #09090a;
+}
+
+.barra-menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #1A1A1D;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+.carrinho{
+    margin-left: 900px;
+}
+
+.usuario{
+    margin-left: 35px;
+}
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .logo h1 {
+    margin: 0;
+  }
+  
+  .usuario {
+    display: flex;
+    align-items: center;
+  }
+  
+  .usuario img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .usuario span {
+    font-weight: bold;
+    color: white;
+  }
+  
+  .carrinho img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .barra-menu nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .barra-menu nav ul li {
+    display: inline-block;
+  }
+  .barra-menu .logo h1{
+    color: #45F3FF;
+    font-size: 22px;
+  }
+  
+  .barra-menu nav ul li a {
+    display: flex;
+    text-decoration: none;
+    color: #333;
+  }
+
+  .barra-menu-secundaria {
+    position: fixed;
+    margin-top: 54px;
+    background-color: #333;
+    padding: 10px 152px;
+  }
+  
+  .barra-menu-secundaria ul {
+    display: flex;
+    gap: 200px;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .barra-menu-secundaria li {
+    margin-right: 10px;
+  }
+  
+  .barra-menu-secundaria a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .barra-menu-secundaria .ativo {
+    font-weight: bold;
+  }
