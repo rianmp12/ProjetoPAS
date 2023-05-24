@@ -11,7 +11,7 @@ body{
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background: #09090a;
+    background: #16352a;
 }
 
 .logo{
@@ -22,7 +22,7 @@ body{
     align-items: center;
 }
 .logo h2 {
-    color: #45f3ff;
+    color: #fff;
 }
 
 .logo img {
@@ -51,17 +51,23 @@ body{
 
 .voltar {
     display: flex;
-    gap: 7px;
+    gap: 3px;
+    background: #fff;
+    width: 160px;
+    height: 90px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
 }
 
 .voltar img {
-    height: 20px;
+    height: 15px;
     width: 15px;
 }
 
 .voltar a{
     text-decoration: none;
-    color: #45f3ff;
+    color: #292929;
     font-size: 14px;
 }
 
@@ -70,7 +76,7 @@ body{
     position: relative;
     width: 380px;
     height: 630px;
-    background: #121214;
+    background: #f5f5f5;
     border-radius: 8px;
     overflow: hidden;
 }
@@ -151,7 +157,7 @@ body{
 .box form{
     position: absolute;
     inset: 4px;
-    background: #121214;
+    background: #ffffffff;
     padding: 50px 40px;
     border-radius: 8px;
     z-index: 2;
@@ -160,7 +166,7 @@ body{
 }
 
 .box form h2{
-    color: #fff;
+    color: #292929;
     font-weight: 500;
     text-align: center;
     letter-spacing: 0.1em;
@@ -180,7 +186,7 @@ body{
     outline: none;
     border: none;
     box-shadow: none;
-    color: #121214;
+    color: #292929;
     font-size: 1em;
     letter-spacing: 0.05em;
     transition: 0.5s;
@@ -192,7 +198,7 @@ body{
     left: 0;
     padding: 20px 10px 10px;
     pointer-events: none;
-    color: #8f8f8f;
+    color: #5f5f5f;
     font-size: 1em;
     letter-spacing: 0.05em;
     transition: 0.5s;
@@ -200,7 +206,7 @@ body{
 
 .box form .inputBox input:valid ~ span,
 .box form .inputBox input:focus ~ span {
-    color: #fff;
+    color: #292929;
     font-size: 0.75em;
     transform: translateY(-34px);
 }
@@ -211,7 +217,7 @@ body{
     bottom: 0;
     width: 100%;
     height: 2px;
-    background: #fff;
+    background: #e0e0e0;
     border-radius: 4px;
     overflow: hidden;
     transition: 0.5s;
@@ -232,14 +238,14 @@ body{
 .box form .links a{
     margin: 10px 0;
     font-size: 0.75em;
-    color: #8f8f8f;
+    color: #292929;
     text-decoration: none;
 
 }
 
 .box form .links a:hover,
 .box form .links a:nth-child(2){
-    color: #fff;
+    color: #292929;
 }
 
 
@@ -247,7 +253,8 @@ body{
     border: none;
     outline: none;
     padding: 9px 25px;
-    background: #fff;
+    background: #292929;
+    color: #fff;
     cursor: pointer;
     font-size: 0.9em;
     border-radius: 4px;

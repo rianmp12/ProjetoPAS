@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 body{
-    background: #09090a;
+    background: #fff;
     display: flex;
     justify-content: center;
     min-height: 100vh;
@@ -16,12 +16,12 @@ body{
 .barra-menu {
     position: fixed;
     top: 0;
-    width: 100%;
-    background: #09090a;
+    background: #fff;
     display: flex;
     align-items: center;
     padding: 30px 20px;
-    height: 100px;
+    height: 8vh;
+    width: 100vw;
   }
 
 .carrinho{
@@ -53,14 +53,15 @@ body{
   }
   
   .usuario img {
-    width: 30px;
-    height: 30px;
+    width: 27px;
+    height: 27px;
     margin-right: 10px;
+    margin-bottom: 6px;
   }
   
   .usuario span {
     font-weight: bold;
-    color: white;
+    color: #292929;
   }
   
   .carrinho img {
@@ -78,7 +79,7 @@ body{
     display: inline-block;
   }
   .barra-menu .logo h1{
-    color: #45F3FF;
+    color: #292929;
     font-size: 22px;
   }
   
@@ -90,11 +91,12 @@ body{
 
   .barra-menu-secundaria {
     position: fixed;
-    height: 50px;
-    margin-top: 100px;
-    width: 100%;
+    height: 6vh;
+    width: 100vw;
+    margin-top: 60px;
     padding: 10px 141px;
-    background: #09090a;
+    background: #dddddd;
+
     display: flex;
   }
   
@@ -108,11 +110,13 @@ body{
   
   .barra-menu-secundaria li {
     margin-right: 10px;
+    font-weight: bolder;
+    font-size: 14px;
   }
   
   .barra-menu-secundaria a {
     text-decoration: none;
-    color: #fff;
+    color: #292929;
   }
   
   .barra-menu-secundaria .ativo {
@@ -135,7 +139,9 @@ body{
     margin: 10px;
     display: flex;
     gap: 15px;
-    background: #0E0E0F;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-style: solid;
     flex-direction: column;
     align-items: center;
     padding-top: 20px;
@@ -152,7 +158,7 @@ body{
     max-width: 273px;
     text-align: center;
     text-decoration: none;
-    color: #fff;
+    color: #292929;
     transition: all 0.3s;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -169,7 +175,7 @@ body{
 .price{
     display: flex;
     gap: 10px;
-    color: #fff;
+    color: #292929;
     font-size: 20px;
     align-items: center;
     margin-bottom: 10px;
@@ -177,14 +183,13 @@ body{
 }
 
 .price p{
-    color: #45F3FF;
+    color: #008A2D;
     font-weight: bolder;
     font-size: 24px;
 }
 
 .mudaCor{
-  color: #45F3FF;
-  font-weight: bolder;
+  color: #008A2D !important;
 }
 
 
