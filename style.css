@@ -238,3 +238,8 @@ body{
 .box form .buttom:active{
     opacity: 0.8;
 }
+
+.itens img{
+width: 200px;
+height: 200px;
+}

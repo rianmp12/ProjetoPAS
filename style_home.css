@@ -6,20 +6,23 @@
 }
 body{
     background: #09090a;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 .barra-menu {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #1A1A1D;
+    background: #09090a;
     display: flex;
     align-items: center;
-    padding: 10px 20px;
+    padding: 30px 20px;
   }
 
 .carrinho{
-    margin-left: 900px;
+    margin-left: 700px;
 }
 
 .usuario{
@@ -27,6 +30,7 @@ body{
 }
   
   .logo {
+    margin-left: 40px;
     display: flex;
     align-items: center;
   }
@@ -83,9 +87,9 @@ body{
 
   .barra-menu-secundaria {
     position: fixed;
-    margin-top: 54px;
-    background-color: #333;
-    padding: 10px 152px;
+    margin-top: 80px;
+    padding: 10px 141px;
+    background: #09090a;
   }
   
   .barra-menu-secundaria ul {
@@ -108,3 +112,62 @@ body{
   .barra-menu-secundaria .ativo {
     font-weight: bold;
   }
+
+  .main{
+    margin-top: 160px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .main .itens{
+    width: 323px;
+    height: 470px;
+    border-radius: 7px;
+    margin: 10px;
+    display: flex;
+    gap: 20px;
+    background: #0E0E0F;
+  }
+
+.itens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.itens img{
+    width: 253px;
+    height: 286px;
+    border-radius: 10px;
+    }
+.itens a{
+    font-size: 18px;
+    height: 70px ;
+    max-width: 273px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.itens a:hover{
+    text-decoration:underline;
+    color: #45F3FF;
+}
+
+.price{
+    display: flex;
+    gap: 4px;
+    color: #fff;
+    font-size: 20px;
+    align-items: center;
+
+}
+
+.price p{
+    color: #45F3FF;
+    font-weight: bolder;
+    font-size: 24px;
+}
