@@ -22,15 +22,17 @@ body{
     padding: 30px 20px;
     height: 8vh;
     width: 100vw;
+    justify-content: space-between;
   }
 
-.carrinho{
-    margin-left: 700px;
-}
+  .menu_right {
+    display: flex;
+    gap: 10px;
+  }
 
-.usuario{
-    margin-left: 35px;
-}
+
+
+
   
   .logo {
     margin-left: 40px;
@@ -93,12 +95,13 @@ body{
     position: fixed;
     height: 6vh;
     width: 100vw;
-    margin-top: 60px;
+    margin-top: 70px;
     padding: 10px 141px;
-    background: #dddddd;
-
+    background: #e7e7e7;
     display: flex;
+    justify-content: center;
   }
+
   
   .barra-menu-secundaria ul {
     display: flex;
@@ -135,6 +138,7 @@ body{
   
   .main .itens{
     width: 300px;
+    max-height: 433px;
     border-radius: 7px;
     margin: 10px;
     display: flex;
@@ -168,8 +172,7 @@ body{
 }
 
 .itens a:hover{
-    text-decoration:underline;
-    color: #45F3FF;
+  opacity: 0.8;
 }
 
 .price{
@@ -194,7 +197,7 @@ body{
 
 
 .main_container{
-  background: #181819;
+  background: #2929;
   width: 450px;
   height: 430px;
   display: flex;

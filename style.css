@@ -9,10 +9,12 @@
 
 body{
     display: flex;
-    align-items: center;
+    justify-content: space-around;
     min-height: 100vh;
+    align-items: center;
     background: url("https://image1.lacoste.com/dw/image/v2/AAQM_PRD/on/demandware.static/Sites-BRECOM-Site/Library-Sites-LacosteContent/pt_BR/dw52593022/loyalty-program/bg_section.png") no-repeat;
 }
+
 
 .logo{
     display: flex;
@@ -36,7 +38,6 @@ body{
     flex-direction: column;
     width: 420px;
     height: 420px;
-    margin-left: 240px;
     text-align: center;
     gap: 50px;
 
