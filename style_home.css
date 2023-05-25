@@ -195,6 +195,11 @@ body{
   color: #008A2D !important;
 }
 
+.container_finalizacao{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .main_container{
   background: #2929;
@@ -202,9 +207,8 @@ body{
   height: 430px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin-top: 180px;
-  gap: 30px;
   border-radius: 10px;
 }
 
