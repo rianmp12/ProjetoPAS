@@ -13,11 +13,16 @@ async function itens(){
     produtos.forEach(element => {
         const item= document.createElement('div')
         item.className= 'itens'
-        const img= document.createElement('img')
-        img.src= element.image
-        const a= document.createElement('a')
+        const link = document.createElement('a')
+        link.href = `ìtens.html?id=${element.id}`
+        link.className = 'link_link'
+        const img = document.createElement('img')
+        img.src = element.image
+        img.id = element.id
+        const a = document.createElement('a')
         a.href= '#'
-        a.textContent= element.title
+        a.className = 'link_texto'
+        a.textContent = element.title
         const price = document.createElement('div')
         price.className= 'price'
         const text = document.createElement('span')
@@ -32,9 +37,18 @@ async function itens(){
         price.append(textPrice)
         price.append(text2)
         item.append(price)
-        container.append(item)
+        link.append(item)
+        container.append(link)
+        link.addEventListener('click', detailsProduto)
         
     });
+}
+
+async function detailsProduto(event){
+  event.preventDefault();
+  const idProduto = event.target.id
+
+  window.location.href =  `itens.html?id=${idProduto}` ;
 }
 
 async function categorias() {
