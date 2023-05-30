@@ -13,8 +13,11 @@ body{
     min-height: 100vh;
 }
 
+.conteiner_menu{
+  position: fixed;
+}
+
 .barra-menu {
-    position: fixed;
     top: 0;
     background: #fff;
     display: flex;
@@ -92,10 +95,8 @@ body{
   }
 
   .barra-menu-secundaria {
-    position: fixed;
     height: 6vh;
     width: 100vw;
-    margin-top: 70px;
     padding: 10px 141px;
     background: #e7e7e7;
     display: flex;
