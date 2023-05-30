@@ -4,6 +4,8 @@ const categoria_masculina = document.querySelector('#catmasculina');
 const categoria_feminina = document.querySelector('#catfeminina');
 const categoria_acessorio = document.querySelector('#catacessorio');
 const categoria_eletronico = document.querySelector('#cateletronico');
+const usernameElement = document.querySelector("#username");
+usernameElement.innerHTML = localStorage.getItem('username');
 
 async function itens(){
     const data= await fetch('https://fakestoreapi.com/products')

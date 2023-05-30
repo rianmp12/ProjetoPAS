@@ -11,30 +11,30 @@
 <body>
     <div class="box">
         <span class="borderLine"></span>
-        <form>
+        <form id = "cadastro">
             <h2>Sign up</h2>
             <div class="inputBox">
-                <input type="text" required="required">
+                <input id = "name" type="text" required="required">
                 <span>Name</span>
                 <i></i>
             </div>
             <div class="inputBox">
-                <input type="text" required="required">
+                <input id="username" type="text" required="required">
                 <span>Username</span>
                 <i></i>
             </div>
             <div class="inputBox">
-                <input type="mail" required="required">
+                <input id = "email" type="email" required="required">
                 <span>E-mail</span>
                 <i></i>
             </div>
             <div class="inputBox">
-                <input type="password" required="required">
+                <input id="password" type="password" required="required">
                 <span>Password</span>
                 <i></i>
             </div>
             <div class="inputBox">
-                <input type="password" required="required">
+                <input id="confirmPassword" type="password" required="required">
                 <span>Confirm Password</span>
                 <i></i>
             </div>
@@ -57,4 +57,6 @@
     </div>
     
 </body>
+<script src="Tela_Inicial.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </html>

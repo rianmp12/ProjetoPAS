@@ -3,7 +3,15 @@
     justify-content: center;
     align-items: center;
     gap: 200px;
+    background: #c01616;
+    height: 410px;
+    width: 600px;
+}
 
+.container_main{
+    align-items: center;
+    justify-content: center;
+    background: #9f0be4;
 }
 
 .container_left img{

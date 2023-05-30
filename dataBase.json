@@ -1,0 +1,11 @@
+{
+  "users": [
+    {
+      "username": "cassio",
+      "password": "konoha",
+      "name": "Cássio N da Silva",
+      "email": "cassio@hotmail.com",
+      "id": 1
+    }
+  ]
+}
