@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: space-around;
+    min-height: 100vh;
+    align-items: center;
+    background: url("https://image1.lacoste.com/dw/image/v2/AAQM_PRD/on/demandware.static/Sites-BRECOM-Site/Library-Sites-LacosteContent/pt_BR/dw52593022/loyalty-program/bg_section.png") no-repeat;
+}
+
+
+.logo{
+    display: flex;
+    width: 400px;
+    height: 70px;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+.logo h2 {
+    color: #fff;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 420px;
+    height: 420px;
+    text-align: center;
+    gap: 50px;
+
+    border-radius: 8px;
+}
+
+.content h1{
+    color: #fff;
+    font-size: 50px;
+}
+
+.box {
+    margin-left: 200px;
+    position: relative;
+    width: 380px;
+    height: 420px;
+    background: #f5f5f5;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.box::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent, transparent, #45f3ff, #45f3ff,#45f3ff);
+    z-index: 1;
+    transform-origin: bottom right ;
+    animation: animate 6s linear infinite;
+}
+
+.box::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent, transparent, #45f3ff, #45f3ff,#45f3ff);
+    z-index: 1;
+    transform-origin: bottom right ;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+
+.borderLine{
+    position: absolute;
+    top: 0;
+    inset: 0;
+}
+
+.borderLine::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent, transparent, #ff2770, #ff2770,#ff2770);
+    z-index: 1;
+    transform-origin: bottom right ;
+    animation: animate 6s linear infinite;
+    animation-delay: -1.5s;
+
+}
+
+.borderLine::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent, transparent, #ff2770, #ff2770,#ff2770);
+    z-index: 1;
+    transform-origin: bottom right ;
+    animation: animate 6s linear infinite;
+    animation-delay: -4.5s;
+
+}
+
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
+.box form{
+    position: absolute;
+    inset: 4px;
+    background: #ffffffff;
+    padding: 50px 40px;
+    border-radius: 8px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.box form h2{
+    color: #292929;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+.box form .inputBox{
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
+}
+
+.box form .inputBox input{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    color: #292929;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.box form .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 20px 10px 10px;
+    pointer-events: none;
+    color: #5f5f5f;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+
+.box form .inputBox input:valid ~ span,
+.box form .inputBox input:focus ~ span {
+    color: #292929;
+    font-size: 0.75em;
+    transform: translateY(-34px);
+}
+
+.box form .inputBox i{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    pointer-events: none;
+
+}
+
+.box form .inputBox input:valid ~ i,
+.box form .inputBox input:focus ~ i {
+    height: 44px;
+}
+
+.box form .links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.box form .links a{
+    margin: 10px 0;
+    font-size: 0.75em;
+    color: #292929;
+    text-decoration: none;
+
+}
+
+.box form .links a:hover,
+.box form .links a:nth-child(2){
+    color: #292929;
+}
+
+.box form .button{
+    border: none;
+    outline: none;
+    padding: 9px 25px;
+    background: #292929;
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.9em;
+    border-radius: 4px;
+    font-weight: 600;
+    width: 300px;
+    height: 35px;
+    margin-top: 10px;
+}
+
+.box form .buttom:active{
+    opacity: 0.8;
+}
+
+.itens img{
+width: 200px;
+height: 200px;
+}

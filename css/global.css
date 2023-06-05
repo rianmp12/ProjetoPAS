@@ -1,0 +1,77 @@
+.barra-menu {
+    position: fixed;
+    top: 0;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    padding: 30px 20px;
+    height: 8vh;
+    width: 100vw;
+    justify-content: space-between;
+  }
+
+  .menu_right {
+    display: flex;
+    gap: 10px;
+  }
+
+
+
+
+  
+  .logo {
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .logo h1 {
+    margin: 0;
+  }
+  
+  .usuario {
+    display: flex;
+    align-items: center;
+  }
+  
+  .usuario img {
+    width: 27px;
+    height: 27px;
+    margin-right: 10px;
+    margin-bottom: 6px;
+  }
+  
+  .usuario span {
+    font-weight: bold;
+    color: #292929;
+  }
+  
+  .carrinho img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .barra-menu nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .barra-menu nav ul li {
+    display: inline-block;
+  }
+  .barra-menu .logo h1{
+    color: #292929;
+    font-size: 22px;
+  }
+  
+  .barra-menu nav ul li a {
+    display: flex;
+    text-decoration: none;
+    color: #333;
+  }

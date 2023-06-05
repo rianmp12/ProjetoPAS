@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cabecalho{
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px 0 60px;
+    color: #16352a;
+}
+
+.cabecalho a{
+    text-decoration: none;
+    color: #16352a;
+    font-weight: 600;
+}
+
+.voltar{
+    display: flex;
+    align-items: center;
+}
+
+.voltar img {
+    height: 15px;
+    width: 15px;
+}
+
+.quantpreco{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 3fr 1.5fr 1.5fr;
+    width: 80vw;
+    height: 50px;
+    background-color: #16352a;
+    justify-content: flex-end;
+    margin-top: 60px;
+    border-radius: 10px;
+    color: #fff;
+    justify-items: center;
+}
+
+.quantpreco a{
+    display: flex;
+    align-items: center;
+}
+
+.quantpreco img{
+    width: 20px;
+}
+
+.itens_carrinho{
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #ccc;
+}
+
+.itens_carrinho img{
+    width: 95px;
+    height: 110px;
+    border-radius: 5px;
+}
+
+.finalizar{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 80vw;
+    height: 100px;
+    gap: 20px;
+    justify-content: center;
+    color: #16352a;
+}
+
+.finalizar p{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.finalizar a{
+    background: #16352a;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
