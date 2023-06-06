@@ -1,9 +1,10 @@
-const listItens=[1,2,3,4,5,5,5];
+
 const container_item = document.querySelector(".container_itens")
 const button = document.querySelector(".total")
 
 
 async function loadItens(){
+    const listItens= await getItensCarrinho()
     let cont = 0;
     listItens.forEach(async element => {
         const data= await fetch(`https://fakestoreapi.com/products/${element}`)
@@ -29,7 +30,6 @@ async function loadItens(){
 }
 
 async function botaoLixeira(){
-    console.log(listItens)
     const lixeira = document.querySelector('.lixeira')
     lixeira.addEventListener("click", element =>{
         element.preventDefault()
@@ -40,6 +40,11 @@ async function botaoLixeira(){
         container_item.textContent=""
         button.textContent= "Valor total: R$0,00"
     })
+}
+
+async function getItensCarrinho(){
+    const itens = await fetch("http://localhost:3000/carrinho")
+    return itens.json()
 }
 
 botaoLixeira()

@@ -7,5 +7,11 @@
       "email": "cassio@hotmail.com",
       "id": 1
     }
+  ],
+  "carrinho": [
+    {
+      "username": 1,
+      "idProduto": 1
+    }
   ]
 }
