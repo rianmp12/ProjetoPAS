@@ -20,8 +20,30 @@
       "name": "Victor Gabriel",
       "email": "victor@gmail.com",
       "id": 3
+    },
+    {
+      "username": "",
+      "password": "",
+      "name": "",
+      "email": "",
+      "id": 4
+    },
+    {
+      "username": "ViniJr",
+      "password": "malvadeza",
+      "name": "Vinicius Teixeira",
+      "email": "vini@hotmail.com",
+      "id": 5
     }
   ],
   "carrinho_cassio": [],
-  "carrinho_victor": []
+  "carrinho_victor": [],
+  "carrinho_ViniJr": [
+    {
+      "username": "Vinicius Teixeira",
+      "idProduto": "2",
+      "quantidade": 1,
+      "id": 1
+    }
+  ]
 }
