@@ -21,14 +21,14 @@ async function loadItens(){
         const quant = document.createElement('p')
         quant.textContent = element.quantidade
         const price = document.createElement('p')
-        price.textContent = "R$ " + produtos.price
+        price.textContent = "R$ " + (produtos.price*4.97).toFixed(2)
         cont+=produtos.price
         item.append(img)
         item.append(title)
         item.append(quant)
         item.append(price)
         container_item.append(item)
-        button.textContent="Valor total: R$ " + cont
+        button.textContent="Valor total: R$ " + (cont*4.97).toFixed(2)
     });
 
     

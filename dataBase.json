@@ -44,6 +44,12 @@
       "idProduto": "2",
       "quantidade": 1,
       "id": 1
+    },
+    {
+      "username": "Vinicius Teixeira",
+      "idProduto": "3",
+      "quantidade": 1,
+      "id": 2
     }
   ]
 }
