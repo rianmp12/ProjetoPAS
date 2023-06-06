@@ -8,29 +8,31 @@ document.getElementById('loginForm')?.addEventListener('submit', function(event)
     console.log('Password:', password);
     axios.get('http://localhost:3000/users')
     .then(function(res){
-        console.log(res)
+        let encontrado = false;
         for (var i = 0; i < res.data.length; i++) {
-               var usuario = res.data[i];    
+            var usuario = res.data[i];    
                 
-               if (usuario.username === username) {     
-                   
+            if (usuario.username === username) {     
                 if (usuario.password === password) { 
                     localStorage.setItem('username', usuario.name)
-                    window.location.href = "home.html";         
+                    localStorage.setItem('login', usuario.username)
+                    window.location.href = "home.html";       
+                    encontrado = true;  
                 } else {       
                     alert('senha incorreta')    
             }      
             break;   
-        } 
-        alert('usuário não encontrado')
+            }
         }
-
+        if (!encontrado){
+            alert('usuário não encontrado')
+        }
     })
 
     
 });
 
-document.getElementById('cadastro')?.addEventListener('submit', function(event) {
+document.getElementById('cadastro')?.addEventListener('submit', async function(event) {
     event.preventDefault();
 
     var username = document.getElementById('username').value;
@@ -42,6 +44,6 @@ document.getElementById('cadastro')?.addEventListener('submit', function(event) 
         username, password, name, email
     }
 
-    axios.post('http://localhost:3000/users', user)
-
+    //TODO: Criar um carrinho_username pra quando o usuário se cadastrar
+    await axios.post('http://localhost:3000/users', user)
 });
